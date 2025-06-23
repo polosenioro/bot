@@ -1,0 +1,4009 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_86732fc267af5a4fa35848fbdb3cdafd {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_86732fc267af5a4fa35848fbdb3cdafd" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_86732fc267af5a4fa35848fbdb3cdafd = L.map(
+                "map_86732fc267af5a4fa35848fbdb3cdafd",
+                {
+                    center: [54.26483528137256, 45.72982669411764],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 5,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_31979be6f57cce66a3ca6fc8e2cba7ad = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_31979be6f57cce66a3ca6fc8e2cba7ad.addTo(map_86732fc267af5a4fa35848fbdb3cdafd);
+        
+    
+            var marker_cluster_909ed06960aa2f1df622abae0c877117 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_2bc7c7d608428ea9a538daf89c527787 = L.marker(
+                [47.2392184, 38.8755031],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_3648646d40c50b7be298d1d5545a7cbe = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c44bb26fa0de76e1b7f212a7c8b58e6a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_decf48d1a63c6b91afcdf08e2b3a0218 = $(`<div id="html_decf48d1a63c6b91afcdf08e2b3a0218" style="width: 100.0%; height: 100.0%;"><b>Таганрог</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_c44bb26fa0de76e1b7f212a7c8b58e6a.setContent(html_decf48d1a63c6b91afcdf08e2b3a0218);
+            
+        
+
+        marker_2bc7c7d608428ea9a538daf89c527787.bindPopup(popup_c44bb26fa0de76e1b7f212a7c8b58e6a)
+        ;
+
+        
+    
+    
+                marker_2bc7c7d608428ea9a538daf89c527787.setIcon(icon_3648646d40c50b7be298d1d5545a7cbe);
+            
+    
+            var marker_73b7d0cfd570fa2dc84fbf81c5bb5f6a = L.marker(
+                [57.8173923, 28.3343465],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_699d4f23ee07a0efd2a2a8490a1075ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1956f32e146c7272ff1254756bdd7718 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9cf2b7cfeaa83cdf48842af8044b66d3 = $(`<div id="html_9cf2b7cfeaa83cdf48842af8044b66d3" style="width: 100.0%; height: 100.0%;"><b>Псков</b><br>Доход: 22,100 ₽</div>`)[0];
+                popup_1956f32e146c7272ff1254756bdd7718.setContent(html_9cf2b7cfeaa83cdf48842af8044b66d3);
+            
+        
+
+        marker_73b7d0cfd570fa2dc84fbf81c5bb5f6a.bindPopup(popup_1956f32e146c7272ff1254756bdd7718)
+        ;
+
+        
+    
+    
+                marker_73b7d0cfd570fa2dc84fbf81c5bb5f6a.setIcon(icon_699d4f23ee07a0efd2a2a8490a1075ab);
+            
+    
+            var marker_ea2330929aa00db5e0e0731dab3fbbc7 = L.marker(
+                [54.3150278, 48.403373],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_578c7d59d32b04d5109cb2839a0597ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da35e2a6b7cbb1c7d091bc6fbd17edfd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_015d3b17723d914f4bc12f0007704809 = $(`<div id="html_015d3b17723d914f4bc12f0007704809" style="width: 100.0%; height: 100.0%;"><b>Ульяновск</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_da35e2a6b7cbb1c7d091bc6fbd17edfd.setContent(html_015d3b17723d914f4bc12f0007704809);
+            
+        
+
+        marker_ea2330929aa00db5e0e0731dab3fbbc7.bindPopup(popup_da35e2a6b7cbb1c7d091bc6fbd17edfd)
+        ;
+
+        
+    
+    
+                marker_ea2330929aa00db5e0e0731dab3fbbc7.setIcon(icon_578c7d59d32b04d5109cb2839a0597ba);
+            
+    
+            var marker_bcf26ee22cdef9d80e8c7261a3a8b135 = L.marker(
+                [56.1288899, 40.4075203],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_1a7be018b000dfb344225003756222e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_12af4d6883028142c7f4ac55ca219959 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dbac7f172dfff9a74120157af2837504 = $(`<div id="html_dbac7f172dfff9a74120157af2837504" style="width: 100.0%; height: 100.0%;"><b>Владимир</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_12af4d6883028142c7f4ac55ca219959.setContent(html_dbac7f172dfff9a74120157af2837504);
+            
+        
+
+        marker_bcf26ee22cdef9d80e8c7261a3a8b135.bindPopup(popup_12af4d6883028142c7f4ac55ca219959)
+        ;
+
+        
+    
+    
+                marker_bcf26ee22cdef9d80e8c7261a3a8b135.setIcon(icon_1a7be018b000dfb344225003756222e2);
+            
+    
+            var marker_f3527ae3e21c8d82f42d5c997a46ae4b = L.marker(
+                [44.5609447, 38.0766832],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_3b1c6bfb6f70c58bef4f10e4915743b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ddb9608f2e3c5c5e62deddc566bad92a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_01020c58f7ff1691c659decd343c8c87 = $(`<div id="html_01020c58f7ff1691c659decd343c8c87" style="width: 100.0%; height: 100.0%;"><b>Геленджик</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_ddb9608f2e3c5c5e62deddc566bad92a.setContent(html_01020c58f7ff1691c659decd343c8c87);
+            
+        
+
+        marker_f3527ae3e21c8d82f42d5c997a46ae4b.bindPopup(popup_ddb9608f2e3c5c5e62deddc566bad92a)
+        ;
+
+        
+    
+    
+                marker_f3527ae3e21c8d82f42d5c997a46ae4b.setIcon(icon_3b1c6bfb6f70c58bef4f10e4915743b0);
+            
+    
+            var marker_7e9151a509755d2fd1b90128b30ba6ec = L.marker(
+                [60.9339729, 76.581077],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_5b19ec301f74d327000280c165321f40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7cbf4b4b45ad50845dafd66fab077e4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_16c5729ac0e1ad6df38828d4a2ad9746 = $(`<div id="html_16c5729ac0e1ad6df38828d4a2ad9746" style="width: 100.0%; height: 100.0%;"><b>Нижневартовск</b><br>Доход: 28,600 ₽</div>`)[0];
+                popup_7cbf4b4b45ad50845dafd66fab077e4a.setContent(html_16c5729ac0e1ad6df38828d4a2ad9746);
+            
+        
+
+        marker_7e9151a509755d2fd1b90128b30ba6ec.bindPopup(popup_7cbf4b4b45ad50845dafd66fab077e4a)
+        ;
+
+        
+    
+    
+                marker_7e9151a509755d2fd1b90128b30ba6ec.setIcon(icon_5b19ec301f74d327000280c165321f40);
+            
+    
+            var marker_70fdff9be9480cf36179ddf8a3d2a4f8 = L.marker(
+                [43.4439714, 39.9400928],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_9d9b210e5156587ce95ad1dae0328ae2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_42fe6e99ab715d7ef19a1593945cfffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b61d7c8583c25bde7ae07cd1b770af7 = $(`<div id="html_0b61d7c8583c25bde7ae07cd1b770af7" style="width: 100.0%; height: 100.0%;"><b>Адлер</b><br>Доход: 31,200 ₽</div>`)[0];
+                popup_42fe6e99ab715d7ef19a1593945cfffb.setContent(html_0b61d7c8583c25bde7ae07cd1b770af7);
+            
+        
+
+        marker_70fdff9be9480cf36179ddf8a3d2a4f8.bindPopup(popup_42fe6e99ab715d7ef19a1593945cfffb)
+        ;
+
+        
+    
+    
+                marker_70fdff9be9480cf36179ddf8a3d2a4f8.setIcon(icon_9d9b210e5156587ce95ad1dae0328ae2);
+            
+    
+            var marker_4565326f959d54f96accc7d547cc2a9e = L.marker(
+                [54.1930321, 37.61754],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_d18dee03d8d7a46d4023b1eb81c40a14 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7af8a2270b7b3ee90e69a1861acf301f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63dfad4503975b2dfdce3052d5fdac9e = $(`<div id="html_63dfad4503975b2dfdce3052d5fdac9e" style="width: 100.0%; height: 100.0%;"><b>Тула</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_7af8a2270b7b3ee90e69a1861acf301f.setContent(html_63dfad4503975b2dfdce3052d5fdac9e);
+            
+        
+
+        marker_4565326f959d54f96accc7d547cc2a9e.bindPopup(popup_7af8a2270b7b3ee90e69a1861acf301f)
+        ;
+
+        
+    
+    
+                marker_4565326f959d54f96accc7d547cc2a9e.setIcon(icon_d18dee03d8d7a46d4023b1eb81c40a14);
+            
+    
+            var marker_621b510cd82576d376f28d5dbcbbbf5a = L.marker(
+                [53.2423778, 34.3668288],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7e50ccc436b943bf2f5cd381fd97a46c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca7314e9c9e6bd532f3076b45bc97efd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_560bc991c0eac96a8c0a4c0efbfa1065 = $(`<div id="html_560bc991c0eac96a8c0a4c0efbfa1065" style="width: 100.0%; height: 100.0%;"><b>Брянск</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_ca7314e9c9e6bd532f3076b45bc97efd.setContent(html_560bc991c0eac96a8c0a4c0efbfa1065);
+            
+        
+
+        marker_621b510cd82576d376f28d5dbcbbbf5a.bindPopup(popup_ca7314e9c9e6bd532f3076b45bc97efd)
+        ;
+
+        
+    
+    
+                marker_621b510cd82576d376f28d5dbcbbbf5a.setIcon(icon_7e50ccc436b943bf2f5cd381fd97a46c);
+            
+    
+            var marker_6e46d84aa36071260734ced37c5917e8 = L.marker(
+                [44.7239578, 37.7690711],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_8c9b783c27dd554538ad436f1f03852d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91452a13beccb45527d7f115dac42bb4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_adff2f7e77cb61dd6e6e6951c92ac757 = $(`<div id="html_adff2f7e77cb61dd6e6e6951c92ac757" style="width: 100.0%; height: 100.0%;"><b>Новороссийск</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_91452a13beccb45527d7f115dac42bb4.setContent(html_adff2f7e77cb61dd6e6e6951c92ac757);
+            
+        
+
+        marker_6e46d84aa36071260734ced37c5917e8.bindPopup(popup_91452a13beccb45527d7f115dac42bb4)
+        ;
+
+        
+    
+    
+                marker_6e46d84aa36071260734ced37c5917e8.setIcon(icon_8c9b783c27dd554538ad436f1f03852d);
+            
+    
+            var marker_393b3dcc414e880673ee14ffbaa49083 = L.marker(
+                [54.710128, 20.5105838],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_8d65ae595c21e013ea43fcba1a5063ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dbddc7ea426f30901d06bd1f162e84be = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1593df6b36da760a67a0ef7c01c5a4cd = $(`<div id="html_1593df6b36da760a67a0ef7c01c5a4cd" style="width: 100.0%; height: 100.0%;"><b>Калининград</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_dbddc7ea426f30901d06bd1f162e84be.setContent(html_1593df6b36da760a67a0ef7c01c5a4cd);
+            
+        
+
+        marker_393b3dcc414e880673ee14ffbaa49083.bindPopup(popup_dbddc7ea426f30901d06bd1f162e84be)
+        ;
+
+        
+    
+    
+                marker_393b3dcc414e880673ee14ffbaa49083.setIcon(icon_8d65ae595c21e013ea43fcba1a5063ba);
+            
+    
+            var marker_78c17fed142cfc53ce73442c56e03cec = L.marker(
+                [43.024593, 44.68211],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_4ee5905a00e934e78bb46df965066a6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_57939a29b03bccc8bbc63a7c0c49fda7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_05330316dfb572ea2474827797307725 = $(`<div id="html_05330316dfb572ea2474827797307725" style="width: 100.0%; height: 100.0%;"><b>Владикавказ</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_57939a29b03bccc8bbc63a7c0c49fda7.setContent(html_05330316dfb572ea2474827797307725);
+            
+        
+
+        marker_78c17fed142cfc53ce73442c56e03cec.bindPopup(popup_57939a29b03bccc8bbc63a7c0c49fda7)
+        ;
+
+        
+    
+    
+                marker_78c17fed142cfc53ce73442c56e03cec.setIcon(icon_4ee5905a00e934e78bb46df965066a6b);
+            
+    
+            var marker_abc53afba37ebd6d0deab111eb06a57b = L.marker(
+                [55.4091211, 37.9041662],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_da216958248596b932cf607c81df8754 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b60128dec64c6c4648a87a1f3e090580 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2d0b2482aa80890fd5985ae46d36a350 = $(`<div id="html_2d0b2482aa80890fd5985ae46d36a350" style="width: 100.0%; height: 100.0%;"><b>Домодедово</b><br>Доход: 35,100 ₽</div>`)[0];
+                popup_b60128dec64c6c4648a87a1f3e090580.setContent(html_2d0b2482aa80890fd5985ae46d36a350);
+            
+        
+
+        marker_abc53afba37ebd6d0deab111eb06a57b.bindPopup(popup_b60128dec64c6c4648a87a1f3e090580)
+        ;
+
+        
+    
+    
+                marker_abc53afba37ebd6d0deab111eb06a57b.setIcon(icon_da216958248596b932cf607c81df8754);
+            
+    
+            var marker_ea0fde5570a2d6a0f973086a6da50cbc = L.marker(
+                [55.625578, 37.6063916],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_5cc536cc6852a683a7c7086ccc8bf8fa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8bb8ee72060fdb82688b44c76e020d33 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f1fe88a91c3537ef4da5d55817de69c = $(`<div id="html_7f1fe88a91c3537ef4da5d55817de69c" style="width: 100.0%; height: 100.0%;"><b>Москва</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_8bb8ee72060fdb82688b44c76e020d33.setContent(html_7f1fe88a91c3537ef4da5d55817de69c);
+            
+        
+
+        marker_ea0fde5570a2d6a0f973086a6da50cbc.bindPopup(popup_8bb8ee72060fdb82688b44c76e020d33)
+        ;
+
+        
+    
+    
+                marker_ea0fde5570a2d6a0f973086a6da50cbc.setIcon(icon_5cc536cc6852a683a7c7086ccc8bf8fa);
+            
+    
+            var marker_2b3e052f9bf7c53a424a510e74f7ad5a = L.marker(
+                [51.7270356, 36.192248],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_e41e41338c46fc0a80daf8a395db15d6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_462b1b075e3e069a2031c58426d2bfde = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5d125d9e43261afc756b3ef5d4985e1c = $(`<div id="html_5d125d9e43261afc756b3ef5d4985e1c" style="width: 100.0%; height: 100.0%;"><b>Курск</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_462b1b075e3e069a2031c58426d2bfde.setContent(html_5d125d9e43261afc756b3ef5d4985e1c);
+            
+        
+
+        marker_2b3e052f9bf7c53a424a510e74f7ad5a.bindPopup(popup_462b1b075e3e069a2031c58426d2bfde)
+        ;
+
+        
+    
+    
+                marker_2b3e052f9bf7c53a424a510e74f7ad5a.setIcon(icon_e41e41338c46fc0a80daf8a395db15d6);
+            
+    
+            var marker_0d96dfb980600a21684cf1c22883e711 = L.marker(
+                [42.9830241, 47.5048717],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_51948a77aa91b7904f834a5a042ad3b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26563a779b2b6f821c9fbbb293abd832 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_87cd9dcd9a0385326124178e19056895 = $(`<div id="html_87cd9dcd9a0385326124178e19056895" style="width: 100.0%; height: 100.0%;"><b>Махачкала</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_26563a779b2b6f821c9fbbb293abd832.setContent(html_87cd9dcd9a0385326124178e19056895);
+            
+        
+
+        marker_0d96dfb980600a21684cf1c22883e711.bindPopup(popup_26563a779b2b6f821c9fbbb293abd832)
+        ;
+
+        
+    
+    
+                marker_0d96dfb980600a21684cf1c22883e711.setIcon(icon_51948a77aa91b7904f834a5a042ad3b9);
+            
+    
+            var marker_ca7b3125d78ea9e01525540c99ee603e = L.marker(
+                [43.1150678, 131.8855768],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_02266c1a874863354e17f3d10990207c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a0b38d54f86727e77ffa3e4c5fdf834d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3936b1e9f4a023fbe019a2cb4d38a4f5 = $(`<div id="html_3936b1e9f4a023fbe019a2cb4d38a4f5" style="width: 100.0%; height: 100.0%;"><b>Владивосток</b><br>Доход: 45,500 ₽</div>`)[0];
+                popup_a0b38d54f86727e77ffa3e4c5fdf834d.setContent(html_3936b1e9f4a023fbe019a2cb4d38a4f5);
+            
+        
+
+        marker_ca7b3125d78ea9e01525540c99ee603e.bindPopup(popup_a0b38d54f86727e77ffa3e4c5fdf834d)
+        ;
+
+        
+    
+    
+                marker_ca7b3125d78ea9e01525540c99ee603e.setIcon(icon_02266c1a874863354e17f3d10990207c);
+            
+    
+            var marker_43f2443a63a2e8e0a2f2c086e881f9d0 = L.marker(
+                [55.3842784, 36.723507],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7484a830e0b7c9c9e994fc98d4834525 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_19036c81273e4ec7669c0c735de9504b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca23801cc5cf47afbd4fa262acc30ba9 = $(`<div id="html_ca23801cc5cf47afbd4fa262acc30ba9" style="width: 100.0%; height: 100.0%;"><b>Наро-фоминск</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_19036c81273e4ec7669c0c735de9504b.setContent(html_ca23801cc5cf47afbd4fa262acc30ba9);
+            
+        
+
+        marker_43f2443a63a2e8e0a2f2c086e881f9d0.bindPopup(popup_19036c81273e4ec7669c0c735de9504b)
+        ;
+
+        
+    
+    
+                marker_43f2443a63a2e8e0a2f2c086e881f9d0.setIcon(icon_7484a830e0b7c9c9e994fc98d4834525);
+            
+    
+            var marker_9f0135c5080c9b91cc13be484bf17093 = L.marker(
+                [46.3498308, 48.0326203],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_0dad0f8c6494c262fe286a0823185be0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_939821a9a2c67365fbbb126f5f23fc5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_62c8aabf223e821cf85465e9ad04661c = $(`<div id="html_62c8aabf223e821cf85465e9ad04661c" style="width: 100.0%; height: 100.0%;"><b>Астрахань</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_939821a9a2c67365fbbb126f5f23fc5b.setContent(html_62c8aabf223e821cf85465e9ad04661c);
+            
+        
+
+        marker_9f0135c5080c9b91cc13be484bf17093.bindPopup(popup_939821a9a2c67365fbbb126f5f23fc5b)
+        ;
+
+        
+    
+    
+                marker_9f0135c5080c9b91cc13be484bf17093.setIcon(icon_0dad0f8c6494c262fe286a0823185be0);
+            
+    
+            var marker_2518bb44818f26f70255fa992559d252 = L.marker(
+                [44.039775, 43.0706669],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_303a144287b42950cc42d743a385409d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64efacc8ced7fd086b62d003fc73988f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e9a9e0719b889098be63efa166f32c0 = $(`<div id="html_2e9a9e0719b889098be63efa166f32c0" style="width: 100.0%; height: 100.0%;"><b>Пятигорск</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_64efacc8ced7fd086b62d003fc73988f.setContent(html_2e9a9e0719b889098be63efa166f32c0);
+            
+        
+
+        marker_2518bb44818f26f70255fa992559d252.bindPopup(popup_64efacc8ced7fd086b62d003fc73988f)
+        ;
+
+        
+    
+    
+                marker_2518bb44818f26f70255fa992559d252.setIcon(icon_303a144287b42950cc42d743a385409d);
+            
+    
+            var marker_aa94c4b5aa6d5063ecb21a96c36eb69e = L.marker(
+                [55.1598408, 61.4025547],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ddafda4c2e635f005a1f5c167d2dd6b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a2b7704175ea5f0a458c93eaa250ae5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_27201859f63552e94e808ab04ea88786 = $(`<div id="html_27201859f63552e94e808ab04ea88786" style="width: 100.0%; height: 100.0%;"><b>Челябинск</b><br>Доход: 15,600 ₽</div>`)[0];
+                popup_a2b7704175ea5f0a458c93eaa250ae5d.setContent(html_27201859f63552e94e808ab04ea88786);
+            
+        
+
+        marker_aa94c4b5aa6d5063ecb21a96c36eb69e.bindPopup(popup_a2b7704175ea5f0a458c93eaa250ae5d)
+        ;
+
+        
+    
+    
+                marker_aa94c4b5aa6d5063ecb21a96c36eb69e.setIcon(icon_ddafda4c2e635f005a1f5c167d2dd6b3);
+            
+    
+            var marker_b15e1439003b1a0db07c7770ab0a25fe = L.marker(
+                [52.7216164, 41.4523988],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_6b9cc9bc360873da5430a2cdd94dcc28 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dbdd7c5b5ae0f340b75f20b2873a29f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_462ccff0d725a902040ed97713ae590f = $(`<div id="html_462ccff0d725a902040ed97713ae590f" style="width: 100.0%; height: 100.0%;"><b>Тамбов</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_2dbdd7c5b5ae0f340b75f20b2873a29f.setContent(html_462ccff0d725a902040ed97713ae590f);
+            
+        
+
+        marker_b15e1439003b1a0db07c7770ab0a25fe.bindPopup(popup_2dbdd7c5b5ae0f340b75f20b2873a29f)
+        ;
+
+        
+    
+    
+                marker_b15e1439003b1a0db07c7770ab0a25fe.setIcon(icon_6b9cc9bc360873da5430a2cdd94dcc28);
+            
+    
+            var marker_96f60c1bb7136323f3158c709e73af4a = L.marker(
+                [54.9005008, 52.2963777],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_708024818b196528fe04d7fd7176b2c8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_43f7edbe39eca70fbeccb654d70487e1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d02e13b77fd699f7e3f3c501214b12d = $(`<div id="html_9d02e13b77fd699f7e3f3c501214b12d" style="width: 100.0%; height: 100.0%;"><b>Альметьевск</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_43f7edbe39eca70fbeccb654d70487e1.setContent(html_9d02e13b77fd699f7e3f3c501214b12d);
+            
+        
+
+        marker_96f60c1bb7136323f3158c709e73af4a.bindPopup(popup_43f7edbe39eca70fbeccb654d70487e1)
+        ;
+
+        
+    
+    
+                marker_96f60c1bb7136323f3158c709e73af4a.setIcon(icon_708024818b196528fe04d7fd7176b2c8);
+            
+    
+            var marker_d74c1ed52d141839be34f9dd02783f2f = L.marker(
+                [56.3153284, 38.1359898],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c64c3ac2180e57a38aabe7e278b781e7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5621753ecc648fb5d4b954d63209ec88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d21572a1509abdabd867ff18c39229ea = $(`<div id="html_d21572a1509abdabd867ff18c39229ea" style="width: 100.0%; height: 100.0%;"><b>Сергиев Посад</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_5621753ecc648fb5d4b954d63209ec88.setContent(html_d21572a1509abdabd867ff18c39229ea);
+            
+        
+
+        marker_d74c1ed52d141839be34f9dd02783f2f.bindPopup(popup_5621753ecc648fb5d4b954d63209ec88)
+        ;
+
+        
+    
+    
+                marker_d74c1ed52d141839be34f9dd02783f2f.setIcon(icon_c64c3ac2180e57a38aabe7e278b781e7);
+            
+    
+            var marker_406ec9ac63669ce40f7680e01489696c = L.marker(
+                [54.991375, 73.371529],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_e334dba78d1dc6ea254697774fa0db18 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_33329ae01b1970c6edb7f7f8d0d5ebef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_37f8dda6bd51bf267f8878cb1b06c05c = $(`<div id="html_37f8dda6bd51bf267f8878cb1b06c05c" style="width: 100.0%; height: 100.0%;"><b>Омск</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_33329ae01b1970c6edb7f7f8d0d5ebef.setContent(html_37f8dda6bd51bf267f8878cb1b06c05c);
+            
+        
+
+        marker_406ec9ac63669ce40f7680e01489696c.bindPopup(popup_33329ae01b1970c6edb7f7f8d0d5ebef)
+        ;
+
+        
+    
+    
+                marker_406ec9ac63669ce40f7680e01489696c.setIcon(icon_e334dba78d1dc6ea254697774fa0db18);
+            
+    
+            var marker_e06e0c8613c3c76e90e24e323a3f6b25 = L.marker(
+                [56.0104274, 37.8461892],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_189214d6e5239cf7e9f9305780642d40 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90d4103686ad884d4a50014498452138 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c895cfe79e603caa61735ac5d00a3261 = $(`<div id="html_c895cfe79e603caa61735ac5d00a3261" style="width: 100.0%; height: 100.0%;"><b>Пушкино</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_90d4103686ad884d4a50014498452138.setContent(html_c895cfe79e603caa61735ac5d00a3261);
+            
+        
+
+        marker_e06e0c8613c3c76e90e24e323a3f6b25.bindPopup(popup_90d4103686ad884d4a50014498452138)
+        ;
+
+        
+    
+    
+                marker_e06e0c8613c3c76e90e24e323a3f6b25.setIcon(icon_189214d6e5239cf7e9f9305780642d40);
+            
+    
+            var marker_6aa33a4e5c45c2bdb10ced302964fc6a = L.marker(
+                [55.0951738, 36.611913],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_fb526c6d6bba1aa8107d8f123095dd3b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11b493e5ddd8257e075d46bedc6f4a8b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_50aa68b85d320d539847e92a9930646a = $(`<div id="html_50aa68b85d320d539847e92a9930646a" style="width: 100.0%; height: 100.0%;"><b>Обнинск</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_11b493e5ddd8257e075d46bedc6f4a8b.setContent(html_50aa68b85d320d539847e92a9930646a);
+            
+        
+
+        marker_6aa33a4e5c45c2bdb10ced302964fc6a.bindPopup(popup_11b493e5ddd8257e075d46bedc6f4a8b)
+        ;
+
+        
+    
+    
+                marker_6aa33a4e5c45c2bdb10ced302964fc6a.setIcon(icon_fb526c6d6bba1aa8107d8f123095dd3b);
+            
+    
+            var marker_74399cbd5e7ec50afd7356d1e08c8548 = L.marker(
+                [56.3264816, 44.0051395],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_eac7ed1338445b5e5a0e7ac6dc4bc358 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_658da17c1029aac5ac4dfbbba1e1c8c8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9a1d70b03aace023aeae763f965d8801 = $(`<div id="html_9a1d70b03aace023aeae763f965d8801" style="width: 100.0%; height: 100.0%;"><b>Нижний Новгород</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_658da17c1029aac5ac4dfbbba1e1c8c8.setContent(html_9a1d70b03aace023aeae763f965d8801);
+            
+        
+
+        marker_74399cbd5e7ec50afd7356d1e08c8548.bindPopup(popup_658da17c1029aac5ac4dfbbba1e1c8c8)
+        ;
+
+        
+    
+    
+                marker_74399cbd5e7ec50afd7356d1e08c8548.setIcon(icon_eac7ed1338445b5e5a0e7ac6dc4bc358);
+            
+    
+            var marker_44b6579eba58f8d11bed32b7d44d3e26 = L.marker(
+                [55.7419774, 52.399207],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_f716a65f38ac86faee5fa23154bcfda9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c7d0a3eb95413c1f43aab636f70abb0b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9eff4ccf86cd02926af4e8bad65551e = $(`<div id="html_c9eff4ccf86cd02926af4e8bad65551e" style="width: 100.0%; height: 100.0%;"><b>Набережные Челны</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_c7d0a3eb95413c1f43aab636f70abb0b.setContent(html_c9eff4ccf86cd02926af4e8bad65551e);
+            
+        
+
+        marker_44b6579eba58f8d11bed32b7d44d3e26.bindPopup(popup_c7d0a3eb95413c1f43aab636f70abb0b)
+        ;
+
+        
+    
+    
+                marker_44b6579eba58f8d11bed32b7d44d3e26.setIcon(icon_f716a65f38ac86faee5fa23154bcfda9);
+            
+    
+            var marker_762d5e13d78403f5991fc5e8f2fdc00a = L.marker(
+                [45.0351532, 38.9772396],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7c3bec8068ef269245ad1e659129cb00 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_342d8c7fb2cc3367cae120531e694f3d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1339420a7d2f0c4896516b559fdce98e = $(`<div id="html_1339420a7d2f0c4896516b559fdce98e" style="width: 100.0%; height: 100.0%;"><b>Краснодар</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_342d8c7fb2cc3367cae120531e694f3d.setContent(html_1339420a7d2f0c4896516b559fdce98e);
+            
+        
+
+        marker_762d5e13d78403f5991fc5e8f2fdc00a.bindPopup(popup_342d8c7fb2cc3367cae120531e694f3d)
+        ;
+
+        
+    
+    
+                marker_762d5e13d78403f5991fc5e8f2fdc00a.setIcon(icon_7c3bec8068ef269245ad1e659129cb00);
+            
+    
+            var marker_0e71ffcb4cdc447f97e8abc6428b4197 = L.marker(
+                [58.014965, 56.246723],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ecd3262797d1498cf09260147a8d77ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25c5e6bf17d02e9b7d5dacc0cd05382a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4301ef746781da42888dea2dba629fb1 = $(`<div id="html_4301ef746781da42888dea2dba629fb1" style="width: 100.0%; height: 100.0%;"><b>Пермь</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_25c5e6bf17d02e9b7d5dacc0cd05382a.setContent(html_4301ef746781da42888dea2dba629fb1);
+            
+        
+
+        marker_0e71ffcb4cdc447f97e8abc6428b4197.bindPopup(popup_25c5e6bf17d02e9b7d5dacc0cd05382a)
+        ;
+
+        
+    
+    
+                marker_0e71ffcb4cdc447f97e8abc6428b4197.setIcon(icon_ecd3262797d1498cf09260147a8d77ee);
+            
+    
+            var marker_2a4fc267fa07b2800b64c475b21f7082 = L.marker(
+                [56.8596713, 35.8952416],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_b6afc38e6d0f52b7190ecef29b95bced = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_48ef1182680ddfff8ec600dbca732894 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6a05021c8a7dc445cf3a46af2019559 = $(`<div id="html_a6a05021c8a7dc445cf3a46af2019559" style="width: 100.0%; height: 100.0%;"><b>Тверь</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_48ef1182680ddfff8ec600dbca732894.setContent(html_a6a05021c8a7dc445cf3a46af2019559);
+            
+        
+
+        marker_2a4fc267fa07b2800b64c475b21f7082.bindPopup(popup_48ef1182680ddfff8ec600dbca732894)
+        ;
+
+        
+    
+    
+                marker_2a4fc267fa07b2800b64c475b21f7082.setIcon(icon_b6afc38e6d0f52b7190ecef29b95bced);
+            
+    
+            var marker_79d5a1de39ebd567e7b017d8eb9d8299 = L.marker(
+                [55.678223, 37.2668096],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_a6b785b6fcbfd45780dc12160110bbe8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb863f82da0c3daca76c5f7fef6daf5e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1bfb4cd964ecdaf90542bcd30bdc0beb = $(`<div id="html_1bfb4cd964ecdaf90542bcd30bdc0beb" style="width: 100.0%; height: 100.0%;"><b>Одинцово</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_fb863f82da0c3daca76c5f7fef6daf5e.setContent(html_1bfb4cd964ecdaf90542bcd30bdc0beb);
+            
+        
+
+        marker_79d5a1de39ebd567e7b017d8eb9d8299.bindPopup(popup_fb863f82da0c3daca76c5f7fef6daf5e)
+        ;
+
+        
+    
+    
+                marker_79d5a1de39ebd567e7b017d8eb9d8299.setIcon(icon_a6b785b6fcbfd45780dc12160110bbe8);
+            
+    
+            var marker_9d0896e040bbc2f2e793b9f6286256b2 = L.marker(
+                [48.7081906, 44.5153353],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_8d7ebc4a7a5a4363088e3f8e343ab4ae = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_adfab195faae69279eda91c6667b1804 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a75327fa022f1aa5dc6fec2145983dfe = $(`<div id="html_a75327fa022f1aa5dc6fec2145983dfe" style="width: 100.0%; height: 100.0%;"><b>Волгоград</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_adfab195faae69279eda91c6667b1804.setContent(html_a75327fa022f1aa5dc6fec2145983dfe);
+            
+        
+
+        marker_9d0896e040bbc2f2e793b9f6286256b2.bindPopup(popup_adfab195faae69279eda91c6667b1804)
+        ;
+
+        
+    
+    
+                marker_9d0896e040bbc2f2e793b9f6286256b2.setIcon(icon_8d7ebc4a7a5a4363088e3f8e343ab4ae);
+            
+    
+            var marker_c5b3d49ac63d84d667c6d7fa344a1e29 = L.marker(
+                [54.77897, 32.0471812],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7cc61c26dc315609930cad304a448a98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fc6fab58875035613fd1f7de8f4b78b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e79c2960380e280d11f19c881eb42491 = $(`<div id="html_e79c2960380e280d11f19c881eb42491" style="width: 100.0%; height: 100.0%;"><b>Смоленск</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_5fc6fab58875035613fd1f7de8f4b78b.setContent(html_e79c2960380e280d11f19c881eb42491);
+            
+        
+
+        marker_c5b3d49ac63d84d667c6d7fa344a1e29.bindPopup(popup_5fc6fab58875035613fd1f7de8f4b78b)
+        ;
+
+        
+    
+    
+                marker_c5b3d49ac63d84d667c6d7fa344a1e29.setIcon(icon_7cc61c26dc315609930cad304a448a98);
+            
+    
+            var marker_8185d743abf1f279a7172acdfb48b572 = L.marker(
+                [43.4769604, 43.5966578],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_886dffbb7de1006f76131a04faac030b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd91080c3016c76236ef83b5c2da3444 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e2b3af52ffc20db440e609696aca980d = $(`<div id="html_e2b3af52ffc20db440e609696aca980d" style="width: 100.0%; height: 100.0%;"><b>Нальчик</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_fd91080c3016c76236ef83b5c2da3444.setContent(html_e2b3af52ffc20db440e609696aca980d);
+            
+        
+
+        marker_8185d743abf1f279a7172acdfb48b572.bindPopup(popup_fd91080c3016c76236ef83b5c2da3444)
+        ;
+
+        
+    
+    
+                marker_8185d743abf1f279a7172acdfb48b572.setIcon(icon_886dffbb7de1006f76131a04faac030b);
+            
+    
+            var marker_9a415ef8356ba3e3f4f1abec22c4aa98 = L.marker(
+                [53.1956255, 50.1014927],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ddd086a8345c53714b626117572fef56 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_265ddf3def8a29acfe63a6af475cb39b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e69243bf037ef461c237bc5fc3116f94 = $(`<div id="html_e69243bf037ef461c237bc5fc3116f94" style="width: 100.0%; height: 100.0%;"><b>Самара</b><br>Доход: 28,600 ₽</div>`)[0];
+                popup_265ddf3def8a29acfe63a6af475cb39b.setContent(html_e69243bf037ef461c237bc5fc3116f94);
+            
+        
+
+        marker_9a415ef8356ba3e3f4f1abec22c4aa98.bindPopup(popup_265ddf3def8a29acfe63a6af475cb39b)
+        ;
+
+        
+    
+    
+                marker_9a415ef8356ba3e3f4f1abec22c4aa98.setIcon(icon_ddd086a8345c53714b626117572fef56);
+            
+    
+            var marker_a6bfebfd73c29e0a588081bde936ce29 = L.marker(
+                [55.1426603, 37.4545328],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_b0698d8759bba496087a55cbfcc22c24 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cc73afae788a5db75da37a2e3ddd78d5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5e3465c5d62df077bb5dd34b1a3bc0d9 = $(`<div id="html_5e3465c5d62df077bb5dd34b1a3bc0d9" style="width: 100.0%; height: 100.0%;"><b>Чехов</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_cc73afae788a5db75da37a2e3ddd78d5.setContent(html_5e3465c5d62df077bb5dd34b1a3bc0d9);
+            
+        
+
+        marker_a6bfebfd73c29e0a588081bde936ce29.bindPopup(popup_cc73afae788a5db75da37a2e3ddd78d5)
+        ;
+
+        
+    
+    
+                marker_a6bfebfd73c29e0a588081bde936ce29.setIcon(icon_b0698d8759bba496087a55cbfcc22c24);
+            
+    
+            var marker_fc2d29867edf748f845e5d0931396889 = L.marker(
+                [54.886598, 38.0772589],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_d2733ce06bc364eec5615be865825348 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72b314f07d562b81da6f5efff3c9bf4a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d2101c7dc9bf957cdf4efa753e20b88d = $(`<div id="html_d2101c7dc9bf957cdf4efa753e20b88d" style="width: 100.0%; height: 100.0%;"><b>Ступино</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_72b314f07d562b81da6f5efff3c9bf4a.setContent(html_d2101c7dc9bf957cdf4efa753e20b88d);
+            
+        
+
+        marker_fc2d29867edf748f845e5d0931396889.bindPopup(popup_72b314f07d562b81da6f5efff3c9bf4a)
+        ;
+
+        
+    
+    
+                marker_fc2d29867edf748f845e5d0931396889.setIcon(icon_d2733ce06bc364eec5615be865825348);
+            
+    
+            var marker_7a4ae079f516507061471db3e93e60d7 = L.marker(
+                [55.8204707, 37.3196942],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ef6fdbf12ebaa1d975dc9f5cf9ce6d97 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e0f4937d8ce4d2011139979582d4750a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d62fc055f445f81f29d69f00c426c6d2 = $(`<div id="html_d62fc055f445f81f29d69f00c426c6d2" style="width: 100.0%; height: 100.0%;"><b>Красногорск</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_e0f4937d8ce4d2011139979582d4750a.setContent(html_d62fc055f445f81f29d69f00c426c6d2);
+            
+        
+
+        marker_7a4ae079f516507061471db3e93e60d7.bindPopup(popup_e0f4937d8ce4d2011139979582d4750a)
+        ;
+
+        
+    
+    
+                marker_7a4ae079f516507061471db3e93e60d7.setIcon(icon_ef6fdbf12ebaa1d975dc9f5cf9ce6d97);
+            
+    
+            var marker_150217908a5405b396ae87946c9d1344 = L.marker(
+                [56.3450695, 37.5200723],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_926cfd117733c9d5dbfec239d0a848ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0bbb3c15dcf484ee5acf99cb327bb934 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faed9531158950c26fa5df379b319c54 = $(`<div id="html_faed9531158950c26fa5df379b319c54" style="width: 100.0%; height: 100.0%;"><b>Дмитров</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_0bbb3c15dcf484ee5acf99cb327bb934.setContent(html_faed9531158950c26fa5df379b319c54);
+            
+        
+
+        marker_150217908a5405b396ae87946c9d1344.bindPopup(popup_0bbb3c15dcf484ee5acf99cb327bb934)
+        ;
+
+        
+    
+    
+                marker_150217908a5405b396ae87946c9d1344.setIcon(icon_926cfd117733c9d5dbfec239d0a848ab);
+            
+    
+            var marker_2adbb36ab9fba2881c1d98eeedffa012 = L.marker(
+                [55.9714098, 37.9200739],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_4a029b1658590e180be829b90d92a24d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06c80134c1edf1622189431b6ece3ca9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cf4b142e585ff4296125625cc1d4d5bd = $(`<div id="html_cf4b142e585ff4296125625cc1d4d5bd" style="width: 100.0%; height: 100.0%;"><b>Ивантеевка</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_06c80134c1edf1622189431b6ece3ca9.setContent(html_cf4b142e585ff4296125625cc1d4d5bd);
+            
+        
+
+        marker_2adbb36ab9fba2881c1d98eeedffa012.bindPopup(popup_06c80134c1edf1622189431b6ece3ca9)
+        ;
+
+        
+    
+    
+                marker_2adbb36ab9fba2881c1d98eeedffa012.setIcon(icon_4a029b1658590e180be829b90d92a24d);
+            
+    
+            var marker_87d90736351edb039f26444db20a6b70 = L.marker(
+                [54.0847722, 61.5514047],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_04e182403ca192bab67d1f8c9d183923 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b818ba907263aaa897aa55671e5aa4ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_75c7f1d07b5f6c3f45b4e30d2c7d1619 = $(`<div id="html_75c7f1d07b5f6c3f45b4e30d2c7d1619" style="width: 100.0%; height: 100.0%;"><b>Троицк</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_b818ba907263aaa897aa55671e5aa4ac.setContent(html_75c7f1d07b5f6c3f45b4e30d2c7d1619);
+            
+        
+
+        marker_87d90736351edb039f26444db20a6b70.bindPopup(popup_b818ba907263aaa897aa55671e5aa4ac)
+        ;
+
+        
+    
+    
+                marker_87d90736351edb039f26444db20a6b70.setIcon(icon_04e182403ca192bab67d1f8c9d183923);
+            
+    
+            var marker_28a51dd2ef79ea39a981519ae452039d = L.marker(
+                [54.9155247, 37.4195533],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_b697e568d7572b90bc056a53ad68fe6c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f09d8441222633f304bd75da95b773bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f2c29abc39ee8077fcdaf2601d168b1 = $(`<div id="html_7f2c29abc39ee8077fcdaf2601d168b1" style="width: 100.0%; height: 100.0%;"><b>Серпухов</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_f09d8441222633f304bd75da95b773bb.setContent(html_7f2c29abc39ee8077fcdaf2601d168b1);
+            
+        
+
+        marker_28a51dd2ef79ea39a981519ae452039d.bindPopup(popup_f09d8441222633f304bd75da95b773bb)
+        ;
+
+        
+    
+    
+                marker_28a51dd2ef79ea39a981519ae452039d.setIcon(icon_b697e568d7572b90bc056a53ad68fe6c);
+            
+    
+            var marker_43f38e8329ef3acf2c1eb779b0e34b2b = L.marker(
+                [55.8917293, 37.4396994],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_9d9be5c2575db516e1add0f867f8db39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2e96b35e1f28f0c40dcf91d5033c0b9b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fab94edea227881278b7fd46c1ecfa0f = $(`<div id="html_fab94edea227881278b7fd46c1ecfa0f" style="width: 100.0%; height: 100.0%;"><b>Химки</b><br>Доход: 36,400 ₽</div>`)[0];
+                popup_2e96b35e1f28f0c40dcf91d5033c0b9b.setContent(html_fab94edea227881278b7fd46c1ecfa0f);
+            
+        
+
+        marker_43f38e8329ef3acf2c1eb779b0e34b2b.bindPopup(popup_2e96b35e1f28f0c40dcf91d5033c0b9b)
+        ;
+
+        
+    
+    
+                marker_43f38e8329ef3acf2c1eb779b0e34b2b.setIcon(icon_9d9be5c2575db516e1add0f867f8db39);
+            
+    
+            var marker_bc0a3d33f43a97fdc1cfd6943f14c632 = L.marker(
+                [55.5101252, 37.5621844],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7965e5059e7dd62d57fa4fcd31b2b164 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_70e7b87ff4679dfcadcfd83d3db33829 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec048053ecf6766fd751f35856d5aaea = $(`<div id="html_ec048053ecf6766fd751f35856d5aaea" style="width: 100.0%; height: 100.0%;"><b>Щербинка</b><br>Доход: 36,400 ₽</div>`)[0];
+                popup_70e7b87ff4679dfcadcfd83d3db33829.setContent(html_ec048053ecf6766fd751f35856d5aaea);
+            
+        
+
+        marker_bc0a3d33f43a97fdc1cfd6943f14c632.bindPopup(popup_70e7b87ff4679dfcadcfd83d3db33829)
+        ;
+
+        
+    
+    
+                marker_bc0a3d33f43a97fdc1cfd6943f14c632.setIcon(icon_7965e5059e7dd62d57fa4fcd31b2b164);
+            
+    
+            var marker_3539560652cabbb7abb55e8a9bf31d69 = L.marker(
+                [56.1853501, 36.9781536],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_d3df1093319c291ee53cfb5b401d80aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_00167ce2d559e11c2e3a48f3e5adfebe = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7900d49c87b30e2384cb91e1d863e077 = $(`<div id="html_7900d49c87b30e2384cb91e1d863e077" style="width: 100.0%; height: 100.0%;"><b>Солнечногорск</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_00167ce2d559e11c2e3a48f3e5adfebe.setContent(html_7900d49c87b30e2384cb91e1d863e077);
+            
+        
+
+        marker_3539560652cabbb7abb55e8a9bf31d69.bindPopup(popup_00167ce2d559e11c2e3a48f3e5adfebe)
+        ;
+
+        
+    
+    
+                marker_3539560652cabbb7abb55e8a9bf31d69.setIcon(icon_d3df1093319c291ee53cfb5b401d80aa);
+            
+    
+            var marker_7b6ac8f4f765565996550fdedc70f870 = L.marker(
+                [48.4812568, 135.0762968],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_24c7bbf12791beb177cb1173f97a7e41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_511901aef392f9324a67aed798482f6b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e21a0d6be91f2607f936135666ba6d46 = $(`<div id="html_e21a0d6be91f2607f936135666ba6d46" style="width: 100.0%; height: 100.0%;"><b>Хабаровск</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_511901aef392f9324a67aed798482f6b.setContent(html_e21a0d6be91f2607f936135666ba6d46);
+            
+        
+
+        marker_7b6ac8f4f765565996550fdedc70f870.bindPopup(popup_511901aef392f9324a67aed798482f6b)
+        ;
+
+        
+    
+    
+                marker_7b6ac8f4f765565996550fdedc70f870.setIcon(icon_24c7bbf12791beb177cb1173f97a7e41);
+            
+    
+            var marker_4c7c0a3b34cce8479c1652567375291e = L.marker(
+                [55.9341491, 37.5142417],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_dc9faf127f349f169830440198164f5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a8f74bf98023bc361f970ab6ae8167c0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8fef1f3a04b152bd2c09947ba6395355 = $(`<div id="html_8fef1f3a04b152bd2c09947ba6395355" style="width: 100.0%; height: 100.0%;"><b>Долгопрудный</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_a8f74bf98023bc361f970ab6ae8167c0.setContent(html_8fef1f3a04b152bd2c09947ba6395355);
+            
+        
+
+        marker_4c7c0a3b34cce8479c1652567375291e.bindPopup(popup_a8f74bf98023bc361f970ab6ae8167c0)
+        ;
+
+        
+    
+    
+                marker_4c7c0a3b34cce8479c1652567375291e.setIcon(icon_dc9faf127f349f169830440198164f5f);
+            
+    
+            var marker_d467eab6bc712aaa7ad706ce76ee81a0 = L.marker(
+                [66.085196, 76.6799167],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_5bc458965dfcb91ab265f5efa35ff6f6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daafde6d3a9010c658d6e4d36140a11e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1dabe98c37675969e1528c1af225d8ea = $(`<div id="html_1dabe98c37675969e1528c1af225d8ea" style="width: 100.0%; height: 100.0%;"><b>Новый Уренгой</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_daafde6d3a9010c658d6e4d36140a11e.setContent(html_1dabe98c37675969e1528c1af225d8ea);
+            
+        
+
+        marker_d467eab6bc712aaa7ad706ce76ee81a0.bindPopup(popup_daafde6d3a9010c658d6e4d36140a11e)
+        ;
+
+        
+    
+    
+                marker_d467eab6bc712aaa7ad706ce76ee81a0.setIcon(icon_5bc458965dfcb91ab265f5efa35ff6f6);
+            
+    
+            var marker_101f43639478172e796c8dab8e650ecd = L.marker(
+                [61.789221, 34.3688041],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_e84a538cc1ec9a2424cf0299b323c4fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5155fc1cc4342c9ef5a7200a466e1cea = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85924907e6ca8ad611837bc6a9025a20 = $(`<div id="html_85924907e6ca8ad611837bc6a9025a20" style="width: 100.0%; height: 100.0%;"><b>Петрозаводск</b><br>Доход: 7,800 ₽</div>`)[0];
+                popup_5155fc1cc4342c9ef5a7200a466e1cea.setContent(html_85924907e6ca8ad611837bc6a9025a20);
+            
+        
+
+        marker_101f43639478172e796c8dab8e650ecd.bindPopup(popup_5155fc1cc4342c9ef5a7200a466e1cea)
+        ;
+
+        
+    
+    
+                marker_101f43639478172e796c8dab8e650ecd.setIcon(icon_e84a538cc1ec9a2424cf0299b323c4fc);
+            
+    
+            var marker_20245010f059c9dae5eb8f150363e0ae = L.marker(
+                [54.5101087, 36.2598115],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_988fd951bb442a107b2a0fc6162dec4a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6772361c543f1bfa5f9aecc4ed0617ef = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8d64aff461f36afdbd5e736a08e8ebdb = $(`<div id="html_8d64aff461f36afdbd5e736a08e8ebdb" style="width: 100.0%; height: 100.0%;"><b>Калуга</b><br>Доход: 7,800 ₽</div>`)[0];
+                popup_6772361c543f1bfa5f9aecc4ed0617ef.setContent(html_8d64aff461f36afdbd5e736a08e8ebdb);
+            
+        
+
+        marker_20245010f059c9dae5eb8f150363e0ae.bindPopup(popup_6772361c543f1bfa5f9aecc4ed0617ef)
+        ;
+
+        
+    
+    
+                marker_20245010f059c9dae5eb8f150363e0ae.setIcon(icon_988fd951bb442a107b2a0fc6162dec4a);
+            
+    
+            var marker_5773c7e03c79ca7712af03da51f77896 = L.marker(
+                [47.2216548, 39.7096061],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_58f89b9f797e1c07ba33639fc07a757b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f42bad03df3d17a7bfe167fcd1de5f20 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c88e18abd317965a7e8f8f5e615c4bf0 = $(`<div id="html_c88e18abd317965a7e8f8f5e615c4bf0" style="width: 100.0%; height: 100.0%;"><b>Ростов-на-Дону</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_f42bad03df3d17a7bfe167fcd1de5f20.setContent(html_c88e18abd317965a7e8f8f5e615c4bf0);
+            
+        
+
+        marker_5773c7e03c79ca7712af03da51f77896.bindPopup(popup_f42bad03df3d17a7bfe167fcd1de5f20)
+        ;
+
+        
+    
+    
+                marker_5773c7e03c79ca7712af03da51f77896.setIcon(icon_58f89b9f797e1c07ba33639fc07a757b);
+            
+    
+            var marker_75ed4d8b6957c635bdd547c3b07fe92d = L.marker(
+                [58.5209862, 31.2757862],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7899d563b7b4f60700c59c8223cdedf6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d3b676b3d6be029b3253528824f29f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ca47b495772506d10556e2bab244e947 = $(`<div id="html_ca47b495772506d10556e2bab244e947" style="width: 100.0%; height: 100.0%;"><b>Великий Новгород</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_2d3b676b3d6be029b3253528824f29f5.setContent(html_ca47b495772506d10556e2bab244e947);
+            
+        
+
+        marker_75ed4d8b6957c635bdd547c3b07fe92d.bindPopup(popup_2d3b676b3d6be029b3253528824f29f5)
+        ;
+
+        
+    
+    
+                marker_75ed4d8b6957c635bdd547c3b07fe92d.setIcon(icon_7899d563b7b4f60700c59c8223cdedf6);
+            
+    
+            var marker_699826da286f7b7f1b917a77934d9d68 = L.marker(
+                [54.7261409, 55.947499],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_cf8430925789d3e4a65fcf026e2509bb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_deeab6e60a88d651106efaee44645577 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5be599218bb40c7f4b07ae9169016403 = $(`<div id="html_5be599218bb40c7f4b07ae9169016403" style="width: 100.0%; height: 100.0%;"><b>Уфа</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_deeab6e60a88d651106efaee44645577.setContent(html_5be599218bb40c7f4b07ae9169016403);
+            
+        
+
+        marker_699826da286f7b7f1b917a77934d9d68.bindPopup(popup_deeab6e60a88d651106efaee44645577)
+        ;
+
+        
+    
+    
+                marker_699826da286f7b7f1b917a77934d9d68.setIcon(icon_cf8430925789d3e4a65fcf026e2509bb);
+            
+    
+            var marker_df24e9986a97cdc41b69421b398061a2 = L.marker(
+                [56.8605175, 53.1977307],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_3a056ab4a7dd0b99b722bc4cf87cc73d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a33e589866a57031e8f952935c1de22 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_45f85ca6fab39f0f730fe8646de762c6 = $(`<div id="html_45f85ca6fab39f0f730fe8646de762c6" style="width: 100.0%; height: 100.0%;"><b>Ижевск</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_3a33e589866a57031e8f952935c1de22.setContent(html_45f85ca6fab39f0f730fe8646de762c6);
+            
+        
+
+        marker_df24e9986a97cdc41b69421b398061a2.bindPopup(popup_3a33e589866a57031e8f952935c1de22)
+        ;
+
+        
+    
+    
+                marker_df24e9986a97cdc41b69421b398061a2.setIcon(icon_3a056ab4a7dd0b99b722bc4cf87cc73d);
+            
+    
+            var marker_8b4d66d7357f430bf2565061600c5f6a = L.marker(
+                [45.0433245, 41.9690934],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_29af041689a4db15f081d0c6ed08fd66 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_16688bb3b6cc8b4c4d5bb4e9be237dd2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_aa8b58bc78622188c50a46d7a5773849 = $(`<div id="html_aa8b58bc78622188c50a46d7a5773849" style="width: 100.0%; height: 100.0%;"><b>Ставрополь</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_16688bb3b6cc8b4c4d5bb4e9be237dd2.setContent(html_aa8b58bc78622188c50a46d7a5773849);
+            
+        
+
+        marker_8b4d66d7357f430bf2565061600c5f6a.bindPopup(popup_16688bb3b6cc8b4c4d5bb4e9be237dd2)
+        ;
+
+        
+    
+    
+                marker_8b4d66d7357f430bf2565061600c5f6a.setIcon(icon_29af041689a4db15f081d0c6ed08fd66);
+            
+    
+            var marker_6d6e2ca762a6ae2e7b0410bf262478a8 = L.marker(
+                [59.128696, 37.916389],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_41623199e73d98dc1af14bf38fa88597 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c7770da7a04e1c2b7ac12132898a992 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_32cf78bd672d199a5dfdbaf3d0cc3682 = $(`<div id="html_32cf78bd672d199a5dfdbaf3d0cc3682" style="width: 100.0%; height: 100.0%;"><b>Череповец</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_7c7770da7a04e1c2b7ac12132898a992.setContent(html_32cf78bd672d199a5dfdbaf3d0cc3682);
+            
+        
+
+        marker_6d6e2ca762a6ae2e7b0410bf262478a8.bindPopup(popup_7c7770da7a04e1c2b7ac12132898a992)
+        ;
+
+        
+    
+    
+                marker_6d6e2ca762a6ae2e7b0410bf262478a8.setIcon(icon_41623199e73d98dc1af14bf38fa88597);
+            
+    
+            var marker_2bc21e7b12f0ab5897946ccbaeec1127 = L.marker(
+                [55.6783142, 37.89377],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_54fd103f65cd31391b682df34e261281 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_808268dca5b14b7f75cde9e9fa3bb277 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dca601fe53b335d887c3cacd899b3ec5 = $(`<div id="html_dca601fe53b335d887c3cacd899b3ec5" style="width: 100.0%; height: 100.0%;"><b>Люберцы</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_808268dca5b14b7f75cde9e9fa3bb277.setContent(html_dca601fe53b335d887c3cacd899b3ec5);
+            
+        
+
+        marker_2bc21e7b12f0ab5897946ccbaeec1127.bindPopup(popup_808268dca5b14b7f75cde9e9fa3bb277)
+        ;
+
+        
+    
+    
+                marker_2bc21e7b12f0ab5897946ccbaeec1127.setIcon(icon_54fd103f65cd31391b682df34e261281);
+            
+    
+            var marker_6c32835c7c3bedac39b293c835a18da4 = L.marker(
+                [61.254032, 73.3964],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c72803ff7015b88e495600bfa05fc3cf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b6abdf749c6e837eab7356db7131f7b3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b3711fc4c79d89eb55b78a22f6b3a698 = $(`<div id="html_b3711fc4c79d89eb55b78a22f6b3a698" style="width: 100.0%; height: 100.0%;"><b>Сургут</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_b6abdf749c6e837eab7356db7131f7b3.setContent(html_b3711fc4c79d89eb55b78a22f6b3a698);
+            
+        
+
+        marker_6c32835c7c3bedac39b293c835a18da4.bindPopup(popup_b6abdf749c6e837eab7356db7131f7b3)
+        ;
+
+        
+    
+    
+                marker_6c32835c7c3bedac39b293c835a18da4.setIcon(icon_c72803ff7015b88e495600bfa05fc3cf);
+            
+    
+            var marker_65fbe0c3f9d824ab90bf299756c5b0d3 = L.marker(
+                [48.829992, 44.7654586],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_537a270877f4bf2c3cd63a4b6b8905c3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_44cdda84262dd7cf9b17bf41f7f8afc4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8915afbac5ff1699d745f2f58487b845 = $(`<div id="html_8915afbac5ff1699d745f2f58487b845" style="width: 100.0%; height: 100.0%;"><b>Волжский</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_44cdda84262dd7cf9b17bf41f7f8afc4.setContent(html_8915afbac5ff1699d745f2f58487b845);
+            
+        
+
+        marker_65fbe0c3f9d824ab90bf299756c5b0d3.bindPopup(popup_44cdda84262dd7cf9b17bf41f7f8afc4)
+        ;
+
+        
+    
+    
+                marker_65fbe0c3f9d824ab90bf299756c5b0d3.setIcon(icon_537a270877f4bf2c3cd63a4b6b8905c3);
+            
+    
+            var marker_6e397a5692ccf78980b2a136ccc9f245 = L.marker(
+                [55.784515, 38.4449485],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_828ceedbfef153d290389aa7c1db8ed0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_399f548f7be6d14a4da60ef06972e247 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5646933c2aa7e1731f949681dc5845e9 = $(`<div id="html_5646933c2aa7e1731f949681dc5845e9" style="width: 100.0%; height: 100.0%;"><b>Электросталь</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_399f548f7be6d14a4da60ef06972e247.setContent(html_5646933c2aa7e1731f949681dc5845e9);
+            
+        
+
+        marker_6e397a5692ccf78980b2a136ccc9f245.bindPopup(popup_399f548f7be6d14a4da60ef06972e247)
+        ;
+
+        
+    
+    
+                marker_6e397a5692ccf78980b2a136ccc9f245.setIcon(icon_828ceedbfef153d290389aa7c1db8ed0);
+            
+    
+            var marker_59a042400280a92144ab5e86bc8984fc = L.marker(
+                [55.4308841, 37.5453056],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_5bc667067d388348d5c113c03f96799e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6adac39e70b925df48d9f3fbbf100520 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3080bfe161677ff349a780dfd058cd8a = $(`<div id="html_3080bfe161677ff349a780dfd058cd8a" style="width: 100.0%; height: 100.0%;"><b>Подольск</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_6adac39e70b925df48d9f3fbbf100520.setContent(html_3080bfe161677ff349a780dfd058cd8a);
+            
+        
+
+        marker_59a042400280a92144ab5e86bc8984fc.bindPopup(popup_6adac39e70b925df48d9f3fbbf100520)
+        ;
+
+        
+    
+    
+                marker_59a042400280a92144ab5e86bc8984fc.setIcon(icon_5bc667067d388348d5c113c03f96799e);
+            
+    
+            var marker_97570b2d70535396e8b9fbbbe035f667 = L.marker(
+                [55.6412879, 51.8160376],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_5168d6c66a5adcbc4aa82b31b1aaef16 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90f2df8f4c8ca37606687fed2b4f3f26 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3bfd186f76becb5f0ac9fcee4f60f8f = $(`<div id="html_d3bfd186f76becb5f0ac9fcee4f60f8f" style="width: 100.0%; height: 100.0%;"><b>Нижнекамск</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_90f2df8f4c8ca37606687fed2b4f3f26.setContent(html_d3bfd186f76becb5f0ac9fcee4f60f8f);
+            
+        
+
+        marker_97570b2d70535396e8b9fbbbe035f667.bindPopup(popup_90f2df8f4c8ca37606687fed2b4f3f26)
+        ;
+
+        
+    
+    
+                marker_97570b2d70535396e8b9fbbbe035f667.setIcon(icon_5168d6c66a5adcbc4aa82b31b1aaef16);
+            
+    
+            var marker_4ff0634804bf43e020505545ec588a51 = L.marker(
+                [59.2189391, 39.8933913],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_14b7c750c1c2a3633af24c5c21d21203 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5e36ea919d5183b512e761232ca7f5f2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4d1642e09a7273465b27714f74ed25cd = $(`<div id="html_4d1642e09a7273465b27714f74ed25cd" style="width: 100.0%; height: 100.0%;"><b>Вологда</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_5e36ea919d5183b512e761232ca7f5f2.setContent(html_4d1642e09a7273465b27714f74ed25cd);
+            
+        
+
+        marker_4ff0634804bf43e020505545ec588a51.bindPopup(popup_5e36ea919d5183b512e761232ca7f5f2)
+        ;
+
+        
+    
+    
+                marker_4ff0634804bf43e020505545ec588a51.setIcon(icon_14b7c750c1c2a3633af24c5c21d21203);
+            
+    
+            var marker_b11ab51cb71644db5dad28f0d5f41931 = L.marker(
+                [56.2382157, 43.4617405],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_8714ad0f6909fa72bf84c2b103e4790b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_546f1c6d00d110ddc70ae596fe284b9a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b3ccd14fc33775dcd7fa6416d67f85a = $(`<div id="html_3b3ccd14fc33775dcd7fa6416d67f85a" style="width: 100.0%; height: 100.0%;"><b>Дзержинск</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_546f1c6d00d110ddc70ae596fe284b9a.setContent(html_3b3ccd14fc33775dcd7fa6416d67f85a);
+            
+        
+
+        marker_b11ab51cb71644db5dad28f0d5f41931.bindPopup(popup_546f1c6d00d110ddc70ae596fe284b9a)
+        ;
+
+        
+    
+    
+                marker_b11ab51cb71644db5dad28f0d5f41931.setIcon(icon_8714ad0f6909fa72bf84c2b103e4790b);
+            
+    
+            var marker_a70f185abd05af595a99a0571eb1ba4e = L.marker(
+                [52.9709262, 36.0642127],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_f55ad00fcb5b480f85091bc75477c14e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ce027507c02192386349b737be2b9ed7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c9b4e6c833bac4d3194e3d507f5ba38e = $(`<div id="html_c9b4e6c833bac4d3194e3d507f5ba38e" style="width: 100.0%; height: 100.0%;"><b>Орел</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_ce027507c02192386349b737be2b9ed7.setContent(html_c9b4e6c833bac4d3194e3d507f5ba38e);
+            
+        
+
+        marker_a70f185abd05af595a99a0571eb1ba4e.bindPopup(popup_ce027507c02192386349b737be2b9ed7)
+        ;
+
+        
+    
+    
+                marker_a70f185abd05af595a99a0571eb1ba4e.setIcon(icon_f55ad00fcb5b480f85091bc75477c14e);
+            
+    
+            var marker_1dd58874280ba76d732c4f6181d539b9 = L.marker(
+                [56.1399598, 47.2480999],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_48e5ee34162c1b13be8b85f98274d545 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_74ed67d7b3cbe75a2b64cc57dd4cc276 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_65c4ef0e92c428ec1db6816f6077140f = $(`<div id="html_65c4ef0e92c428ec1db6816f6077140f" style="width: 100.0%; height: 100.0%;"><b>Чебоксары</b><br>Доход: 13,000 ₽</div>`)[0];
+                popup_74ed67d7b3cbe75a2b64cc57dd4cc276.setContent(html_65c4ef0e92c428ec1db6816f6077140f);
+            
+        
+
+        marker_1dd58874280ba76d732c4f6181d539b9.bindPopup(popup_74ed67d7b3cbe75a2b64cc57dd4cc276)
+        ;
+
+        
+    
+    
+                marker_1dd58874280ba76d732c4f6181d539b9.setIcon(icon_48e5ee34162c1b13be8b85f98274d545);
+            
+    
+            var marker_4e973a13c053fbf42d489538c737a2c4 = L.marker(
+                [57.6508432, 39.8718634],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_dfc512f9c848170a82f9843faf9da4da = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f882ecbd9c77b1b755f224da88c2bd4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c3b8a3428451d97714fd77592a2b1ede = $(`<div id="html_c3b8a3428451d97714fd77592a2b1ede" style="width: 100.0%; height: 100.0%;"><b>Ярославль</b><br>Доход: 15,600 ₽</div>`)[0];
+                popup_f882ecbd9c77b1b755f224da88c2bd4d.setContent(html_c3b8a3428451d97714fd77592a2b1ede);
+            
+        
+
+        marker_4e973a13c053fbf42d489538c737a2c4.bindPopup(popup_f882ecbd9c77b1b755f224da88c2bd4d)
+        ;
+
+        
+    
+    
+                marker_4e973a13c053fbf42d489538c737a2c4.setIcon(icon_dfc512f9c848170a82f9843faf9da4da);
+            
+    
+            var marker_b60396bbb96b3f2889aaae37cbefbecf = L.marker(
+                [55.7464587, 38.0090773],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7bf4098cf3fe6c37ade1e35cbe0d3a41 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8b84d5e8aefe5fd51111af3395cd657 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a99bc21ced0d91c23ce81af8685ae4f5 = $(`<div id="html_a99bc21ced0d91c23ce81af8685ae4f5" style="width: 100.0%; height: 100.0%;"><b>Железнодорожный</b><br>Доход: 15,600 ₽</div>`)[0];
+                popup_c8b84d5e8aefe5fd51111af3395cd657.setContent(html_a99bc21ced0d91c23ce81af8685ae4f5);
+            
+        
+
+        marker_b60396bbb96b3f2889aaae37cbefbecf.bindPopup(popup_c8b84d5e8aefe5fd51111af3395cd657)
+        ;
+
+        
+    
+    
+                marker_b60396bbb96b3f2889aaae37cbefbecf.setIcon(icon_7bf4098cf3fe6c37ade1e35cbe0d3a41);
+            
+    
+            var marker_7db7a6f24ebae716afa84b11b8114804 = L.marker(
+                [53.3475493, 83.7788448],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_b9a22c31ec8c2be8679ae2b49b7993bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_28677d96d8b03831969198beab9808f9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_23783f3293fbacd3066f9ad9696107f5 = $(`<div id="html_23783f3293fbacd3066f9ad9696107f5" style="width: 100.0%; height: 100.0%;"><b>Барнаул</b><br>Доход: 15,600 ₽</div>`)[0];
+                popup_28677d96d8b03831969198beab9808f9.setContent(html_23783f3293fbacd3066f9ad9696107f5);
+            
+        
+
+        marker_7db7a6f24ebae716afa84b11b8114804.bindPopup(popup_28677d96d8b03831969198beab9808f9)
+        ;
+
+        
+    
+    
+                marker_7db7a6f24ebae716afa84b11b8114804.setIcon(icon_b9a22c31ec8c2be8679ae2b49b7993bc);
+            
+    
+            var marker_c60517a8e1f90e7c68da94e61c21bf74 = L.marker(
+                [53.5098845, 49.4189187],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_cdaf3dbc48bfdb3efe4e923e9d21014a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e8c6db6a5decf84ae4ff8cd1bf1c87c7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8b927c71a571e2ba87917c45ca38d722 = $(`<div id="html_8b927c71a571e2ba87917c45ca38d722" style="width: 100.0%; height: 100.0%;"><b>Тольятти</b><br>Доход: 16,900 ₽</div>`)[0];
+                popup_e8c6db6a5decf84ae4ff8cd1bf1c87c7.setContent(html_8b927c71a571e2ba87917c45ca38d722);
+            
+        
+
+        marker_c60517a8e1f90e7c68da94e61c21bf74.bindPopup(popup_e8c6db6a5decf84ae4ff8cd1bf1c87c7)
+        ;
+
+        
+    
+    
+                marker_c60517a8e1f90e7c68da94e61c21bf74.setIcon(icon_cdaf3dbc48bfdb3efe4e923e9d21014a);
+            
+    
+            var marker_c2f7b6615b45a59724864c2d9e54dadc = L.marker(
+                [57.153534, 65.542274],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c2a332995f553097b4f475ccd7cdcd92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fa8bd61cd1e8ec8a91e89b84560c28f4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1d24f4460eff4191554ca95413ca2a32 = $(`<div id="html_1d24f4460eff4191554ca95413ca2a32" style="width: 100.0%; height: 100.0%;"><b>Тюмень</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_fa8bd61cd1e8ec8a91e89b84560c28f4.setContent(html_1d24f4460eff4191554ca95413ca2a32);
+            
+        
+
+        marker_c2f7b6615b45a59724864c2d9e54dadc.bindPopup(popup_fa8bd61cd1e8ec8a91e89b84560c28f4)
+        ;
+
+        
+    
+    
+                marker_c2f7b6615b45a59724864c2d9e54dadc.setIcon(icon_c2a332995f553097b4f475ccd7cdcd92);
+            
+    
+            var marker_9f1b790b5ecbc6febbecff9dfae452df = L.marker(
+                [56.0091173, 92.872586],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_9a22b13da0630d0beb44eda3a33ba06f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_273b2abdbaf6016df01d0f4369c40cd9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9f3e6dd6ba6a3f222f50cf8818a4dd0e = $(`<div id="html_9f3e6dd6ba6a3f222f50cf8818a4dd0e" style="width: 100.0%; height: 100.0%;"><b>Красноярск</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_273b2abdbaf6016df01d0f4369c40cd9.setContent(html_9f3e6dd6ba6a3f222f50cf8818a4dd0e);
+            
+        
+
+        marker_9f1b790b5ecbc6febbecff9dfae452df.bindPopup(popup_273b2abdbaf6016df01d0f4369c40cd9)
+        ;
+
+        
+    
+    
+                marker_9f1b790b5ecbc6febbecff9dfae452df.setIcon(icon_9a22b13da0630d0beb44eda3a33ba06f);
+            
+    
+            var marker_2694f782cb34216a6fe7639755b9626d = L.marker(
+                [51.7671248, 55.0978517],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_89ea9d02e577e2222da812ab7993f746 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_26471f0c6508be347af43dc0d3e4e18b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_83a20c64973f7898ce235e95f7f4698b = $(`<div id="html_83a20c64973f7898ce235e95f7f4698b" style="width: 100.0%; height: 100.0%;"><b>Оренбург</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_26471f0c6508be347af43dc0d3e4e18b.setContent(html_83a20c64973f7898ce235e95f7f4698b);
+            
+        
+
+        marker_2694f782cb34216a6fe7639755b9626d.bindPopup(popup_26471f0c6508be347af43dc0d3e4e18b)
+        ;
+
+        
+    
+    
+                marker_2694f782cb34216a6fe7639755b9626d.setIcon(icon_89ea9d02e577e2222da812ab7993f746);
+            
+    
+            var marker_c96a19571cbed1441d56b039d0fba1be = L.marker(
+                [53.1937836, 45.0067413],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_25de55b472ce0ca8093e8651099d88ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_110009de0d8ca1ff1ca15d42e4006118 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_285b3a1d55c71646a19b0eaa4b81310d = $(`<div id="html_285b3a1d55c71646a19b0eaa4b81310d" style="width: 100.0%; height: 100.0%;"><b>Пенза</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_110009de0d8ca1ff1ca15d42e4006118.setContent(html_285b3a1d55c71646a19b0eaa4b81310d);
+            
+        
+
+        marker_c96a19571cbed1441d56b039d0fba1be.bindPopup(popup_110009de0d8ca1ff1ca15d42e4006118)
+        ;
+
+        
+    
+    
+                marker_c96a19571cbed1441d56b039d0fba1be.setIcon(icon_25de55b472ce0ca8093e8651099d88ee);
+            
+    
+            var marker_0dbe1625ebac1c869b29f8cd88f2cfe9 = L.marker(
+                [64.543022, 40.537121],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_7b6b20d3e31c40b365b2b084a72be55d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4f5bd84f4cb09f63757239a04b65fd93 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57ce934d9e076e26857afad1f9ae45df = $(`<div id="html_57ce934d9e076e26857afad1f9ae45df" style="width: 100.0%; height: 100.0%;"><b>Архангельск</b><br>Доход: 19,500 ₽</div>`)[0];
+                popup_4f5bd84f4cb09f63757239a04b65fd93.setContent(html_57ce934d9e076e26857afad1f9ae45df);
+            
+        
+
+        marker_0dbe1625ebac1c869b29f8cd88f2cfe9.bindPopup(popup_4f5bd84f4cb09f63757239a04b65fd93)
+        ;
+
+        
+    
+    
+                marker_0dbe1625ebac1c869b29f8cd88f2cfe9.setIcon(icon_7b6b20d3e31c40b365b2b084a72be55d);
+            
+    
+            var marker_ce110b79c44e21a999e1a5dd64e4de55 = L.marker(
+                [55.991971, 37.214241],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_da465cb2419af7c1af0cf4d9b1057d13 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5acf4a1d9e936ba72bcea437cad2f64d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fbaf6b725cc2d3e5fb5ace3eaacfb54c = $(`<div id="html_fbaf6b725cc2d3e5fb5ace3eaacfb54c" style="width: 100.0%; height: 100.0%;"><b>Зеленоград</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_5acf4a1d9e936ba72bcea437cad2f64d.setContent(html_fbaf6b725cc2d3e5fb5ace3eaacfb54c);
+            
+        
+
+        marker_ce110b79c44e21a999e1a5dd64e4de55.bindPopup(popup_5acf4a1d9e936ba72bcea437cad2f64d)
+        ;
+
+        
+    
+    
+                marker_ce110b79c44e21a999e1a5dd64e4de55.setIcon(icon_da465cb2419af7c1af0cf4d9b1057d13);
+            
+    
+            var marker_bb5692cafec0b3145836ebbf1013a10c = L.marker(
+                [55.5571496, 37.7087142],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_9b08faec8b9ee1cdad6fd051087464cd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_91320ed61ce762a7627287f7e36613e4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d567f697d0678c1a7a135dd3604df56 = $(`<div id="html_9d567f697d0678c1a7a135dd3604df56" style="width: 100.0%; height: 100.0%;"><b>Видное</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_91320ed61ce762a7627287f7e36613e4.setContent(html_9d567f697d0678c1a7a135dd3604df56);
+            
+        
+
+        marker_bb5692cafec0b3145836ebbf1013a10c.bindPopup(popup_91320ed61ce762a7627287f7e36613e4)
+        ;
+
+        
+    
+    
+                marker_bb5692cafec0b3145836ebbf1013a10c.setIcon(icon_9b08faec8b9ee1cdad6fd051087464cd);
+            
+    
+            var marker_f94f4db2a2dd2ddd2224953616bce994 = L.marker(
+                [55.7622453, 37.856555],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_dff1cdc9902a046f84afb53de5d15f34 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cfe3d3dd6039e0c4a8dcbbfcf338870 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_da459b75a77405b56a942365fdc5edcd = $(`<div id="html_da459b75a77405b56a942365fdc5edcd" style="width: 100.0%; height: 100.0%;"><b>Реутов</b><br>Доход: 20,800 ₽</div>`)[0];
+                popup_6cfe3d3dd6039e0c4a8dcbbfcf338870.setContent(html_da459b75a77405b56a942365fdc5edcd);
+            
+        
+
+        marker_f94f4db2a2dd2ddd2224953616bce994.bindPopup(popup_6cfe3d3dd6039e0c4a8dcbbfcf338870)
+        ;
+
+        
+    
+    
+                marker_f94f4db2a2dd2ddd2224953616bce994.setIcon(icon_dff1cdc9902a046f84afb53de5d15f34);
+            
+    
+            var marker_30930b4076acf901c9146928e8f485af = L.marker(
+                [55.0938743, 38.7670121],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_6f3447e696b14f115861ae1be92a2fcf = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29cfa5f6d76e9e28264cfc35a633e5b0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1461df6cd1d2c799e79de6db2d034342 = $(`<div id="html_1461df6cd1d2c799e79de6db2d034342" style="width: 100.0%; height: 100.0%;"><b>Коломна</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_29cfa5f6d76e9e28264cfc35a633e5b0.setContent(html_1461df6cd1d2c799e79de6db2d034342);
+            
+        
+
+        marker_30930b4076acf901c9146928e8f485af.bindPopup(popup_29cfa5f6d76e9e28264cfc35a633e5b0)
+        ;
+
+        
+    
+    
+                marker_30930b4076acf901c9146928e8f485af.setIcon(icon_6f3447e696b14f115861ae1be92a2fcf);
+            
+    
+            var marker_398cb4817acc9564b85b16f3ec498b49 = L.marker(
+                [55.0288307, 82.9226887],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ce71e2c4053500519daa14b80b30b0ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b036cc78bfeae25940d212afead8dd89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0c15dec839e483dab3fa8edb7f1a274c = $(`<div id="html_0c15dec839e483dab3fa8edb7f1a274c" style="width: 100.0%; height: 100.0%;"><b>Новосибирск</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_b036cc78bfeae25940d212afead8dd89.setContent(html_0c15dec839e483dab3fa8edb7f1a274c);
+            
+        
+
+        marker_398cb4817acc9564b85b16f3ec498b49.bindPopup(popup_b036cc78bfeae25940d212afead8dd89)
+        ;
+
+        
+    
+    
+                marker_398cb4817acc9564b85b16f3ec498b49.setIcon(icon_ce71e2c4053500519daa14b80b30b0ef);
+            
+    
+            var marker_a92bf5b73178ca702b4b716afd7c7a9e = L.marker(
+                [51.530018, 46.034683],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_4a454b5532862571bf77c410b4534c8d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_90ef561f530da4aaa2be31ff2ce3be55 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9056cdc99f269e440318901367e477a6 = $(`<div id="html_9056cdc99f269e440318901367e477a6" style="width: 100.0%; height: 100.0%;"><b>Саратов</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_90ef561f530da4aaa2be31ff2ce3be55.setContent(html_9056cdc99f269e440318901367e477a6);
+            
+        
+
+        marker_a92bf5b73178ca702b4b716afd7c7a9e.bindPopup(popup_90ef561f530da4aaa2be31ff2ce3be55)
+        ;
+
+        
+    
+    
+                marker_a92bf5b73178ca702b4b716afd7c7a9e.setIcon(icon_4a454b5532862571bf77c410b4534c8d);
+            
+    
+            var marker_c9d1c1f77748d1568ab527773bd11c1a = L.marker(
+                [55.9094928, 37.7339358],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_a421636b6ce4b2ec0a1755a67681232c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e9f23c2aa7175977c65b54e08bca01c5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5ef0958790db6e0d0848117730f6bbe2 = $(`<div id="html_5ef0958790db6e0d0848117730f6bbe2" style="width: 100.0%; height: 100.0%;"><b>Мытищи</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_e9f23c2aa7175977c65b54e08bca01c5.setContent(html_5ef0958790db6e0d0848117730f6bbe2);
+            
+        
+
+        marker_c9d1c1f77748d1568ab527773bd11c1a.bindPopup(popup_e9f23c2aa7175977c65b54e08bca01c5)
+        ;
+
+        
+    
+    
+                marker_c9d1c1f77748d1568ab527773bd11c1a.setIcon(icon_a421636b6ce4b2ec0a1755a67681232c);
+            
+    
+            var marker_4c377dad7242ddf06216173210030bea = L.marker(
+                [55.9190049, 37.8150443],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_925bf9d2aa5047c67e2560fe9c711bf0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fd6d72ce9ab2fb7c7e10c9029a30287 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a640c1b28aef5df365378e5c5f2ff15 = $(`<div id="html_2a640c1b28aef5df365378e5c5f2ff15" style="width: 100.0%; height: 100.0%;"><b>Королёв</b><br>Доход: 23,400 ₽</div>`)[0];
+                popup_5fd6d72ce9ab2fb7c7e10c9029a30287.setContent(html_2a640c1b28aef5df365378e5c5f2ff15);
+            
+        
+
+        marker_4c377dad7242ddf06216173210030bea.bindPopup(popup_5fd6d72ce9ab2fb7c7e10c9029a30287)
+        ;
+
+        
+    
+    
+                marker_4c377dad7242ddf06216173210030bea.setIcon(icon_925bf9d2aa5047c67e2560fe9c711bf0);
+            
+    
+            var marker_b9efddd02b23039db986cef7ec950940 = L.marker(
+                [56.9956855, 40.9812104],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_149e68a77381e91cc9c8735b5d324329 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d7545517792d0c13628c774011c2e35 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c34d06eb4876f02ffeef6c6817b02c75 = $(`<div id="html_c34d06eb4876f02ffeef6c6817b02c75" style="width: 100.0%; height: 100.0%;"><b>Иваново</b><br>Доход: 24,700 ₽</div>`)[0];
+                popup_9d7545517792d0c13628c774011c2e35.setContent(html_c34d06eb4876f02ffeef6c6817b02c75);
+            
+        
+
+        marker_b9efddd02b23039db986cef7ec950940.bindPopup(popup_9d7545517792d0c13628c774011c2e35)
+        ;
+
+        
+    
+    
+                marker_b9efddd02b23039db986cef7ec950940.setIcon(icon_149e68a77381e91cc9c8735b5d324329);
+            
+    
+            var marker_ddc27fe1d27fca096f7614ed62114354 = L.marker(
+                [43.5854823, 39.723109],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_8a0d6aefdd6103b13401619a03412139 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c8fbcf587f5e19b85555bcf0c25d26b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8f93917bca85e9e5218760c1501954b = $(`<div id="html_e8f93917bca85e9e5218760c1501954b" style="width: 100.0%; height: 100.0%;"><b>Сочи</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_c8fbcf587f5e19b85555bcf0c25d26b4.setContent(html_e8f93917bca85e9e5218760c1501954b);
+            
+        
+
+        marker_ddc27fe1d27fca096f7614ed62114354.bindPopup(popup_c8fbcf587f5e19b85555bcf0c25d26b4)
+        ;
+
+        
+    
+    
+                marker_ddc27fe1d27fca096f7614ed62114354.setIcon(icon_8a0d6aefdd6103b13401619a03412139);
+            
+    
+            var marker_a130b59ccadb44b33b55de8c677e5e32 = L.marker(
+                [50.5955595, 36.5873394],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c6d48d754ed4e6872efa8f29630f7c7b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d568031794f5ad7cbff9287a045880e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_545f3321e8737048dc767d32db3633b2 = $(`<div id="html_545f3321e8737048dc767d32db3633b2" style="width: 100.0%; height: 100.0%;"><b>Белгород</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_2d568031794f5ad7cbff9287a045880e.setContent(html_545f3321e8737048dc767d32db3633b2);
+            
+        
+
+        marker_a130b59ccadb44b33b55de8c677e5e32.bindPopup(popup_2d568031794f5ad7cbff9287a045880e)
+        ;
+
+        
+    
+    
+                marker_a130b59ccadb44b33b55de8c677e5e32.setIcon(icon_c6d48d754ed4e6872efa8f29630f7c7b);
+            
+    
+            var marker_e523f28d89525512ac55c1868c5348f0 = L.marker(
+                [55.7997662, 37.9373707],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_e7fc106def0097654fcb8384145e1b01 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_685cb674635a9917a70fffc19a8c90c2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_327a1588ffe808d62699495fddf2f022 = $(`<div id="html_327a1588ffe808d62699495fddf2f022" style="width: 100.0%; height: 100.0%;"><b>Балашиха</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_685cb674635a9917a70fffc19a8c90c2.setContent(html_327a1588ffe808d62699495fddf2f022);
+            
+        
+
+        marker_e523f28d89525512ac55c1868c5348f0.bindPopup(popup_685cb674635a9917a70fffc19a8c90c2)
+        ;
+
+        
+    
+    
+                marker_e523f28d89525512ac55c1868c5348f0.setIcon(icon_e7fc106def0097654fcb8384145e1b01);
+            
+    
+            var marker_9a136123d61e1ac310bb807362448114 = L.marker(
+                [55.5709361, 38.2282099],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_9b43aea0ae9e54468ec072395353cffd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fdd2e57c8f2031699c7bd048b35bbb2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c66b18a7c4b0417dc11ffd76a038c1c = $(`<div id="html_9c66b18a7c4b0417dc11ffd76a038c1c" style="width: 100.0%; height: 100.0%;"><b>Раменское</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_fdd2e57c8f2031699c7bd048b35bbb2d.setContent(html_9c66b18a7c4b0417dc11ffd76a038c1c);
+            
+        
+
+        marker_9a136123d61e1ac310bb807362448114.bindPopup(popup_fdd2e57c8f2031699c7bd048b35bbb2d)
+        ;
+
+        
+    
+    
+                marker_9a136123d61e1ac310bb807362448114.setIcon(icon_9b43aea0ae9e54468ec072395353cffd);
+            
+    
+            var marker_60f13a976b755ea4c7c0499f8effb4dc = L.marker(
+                [58.6035661, 49.6666241],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_0315afdde8e217f043e137da08783447 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0d40f9a661b204b0ad8ec6fe6635cbc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3ee9db729de1f7d62c1c5200731292a7 = $(`<div id="html_3ee9db729de1f7d62c1c5200731292a7" style="width: 100.0%; height: 100.0%;"><b>Киров</b><br>Доход: 28,600 ₽</div>`)[0];
+                popup_f0d40f9a661b204b0ad8ec6fe6635cbc.setContent(html_3ee9db729de1f7d62c1c5200731292a7);
+            
+        
+
+        marker_60f13a976b755ea4c7c0499f8effb4dc.bindPopup(popup_f0d40f9a661b204b0ad8ec6fe6635cbc)
+        ;
+
+        
+    
+    
+                marker_60f13a976b755ea4c7c0499f8effb4dc.setIcon(icon_0315afdde8e217f043e137da08783447);
+            
+    
+            var marker_62ef0463dd8a55f30fc0ecb3d9c49941 = L.marker(
+                [51.6605982, 39.2005858],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_3011e523889998584045a46321293575 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ecd6173398c19ffff0f0860da2a5aa7f = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e80c9694c5a3f5903f540db6671e7ba = $(`<div id="html_2e80c9694c5a3f5903f540db6671e7ba" style="width: 100.0%; height: 100.0%;"><b>Воронеж</b><br>Доход: 31,200 ₽</div>`)[0];
+                popup_ecd6173398c19ffff0f0860da2a5aa7f.setContent(html_2e80c9694c5a3f5903f540db6671e7ba);
+            
+        
+
+        marker_62ef0463dd8a55f30fc0ecb3d9c49941.bindPopup(popup_ecd6173398c19ffff0f0860da2a5aa7f)
+        ;
+
+        
+    
+    
+                marker_62ef0463dd8a55f30fc0ecb3d9c49941.setIcon(icon_3011e523889998584045a46321293575);
+            
+    
+            var marker_88a132e032f43bb5851572773be977a0 = L.marker(
+                [68.970665, 33.07497],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_25a509776f0de7094cad0fefd1657140 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_76ab132c07f681b665ed699f46969db5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_10983f458f524b6f12b33735d8d84af4 = $(`<div id="html_10983f458f524b6f12b33735d8d84af4" style="width: 100.0%; height: 100.0%;"><b>Мурманск</b><br>Доход: 31,200 ₽</div>`)[0];
+                popup_76ab132c07f681b665ed699f46969db5.setContent(html_10983f458f524b6f12b33735d8d84af4);
+            
+        
+
+        marker_88a132e032f43bb5851572773be977a0.bindPopup(popup_76ab132c07f681b665ed699f46969db5)
+        ;
+
+        
+    
+    
+                marker_88a132e032f43bb5851572773be977a0.setIcon(icon_25a509776f0de7094cad0fefd1657140);
+            
+    
+            var marker_b9192b9365c91c8790cd8ad62f19a949 = L.marker(
+                [59.9606739, 30.1586551],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_4832e649cb4a4efd9d65aab9153dae2f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d368370bb4d5acd9e99e2579fadff7a8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5486f9eaef7c11c6866e7e2cccbf02bd = $(`<div id="html_5486f9eaef7c11c6866e7e2cccbf02bd" style="width: 100.0%; height: 100.0%;"><b>Санкт-Петербург</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_d368370bb4d5acd9e99e2579fadff7a8.setContent(html_5486f9eaef7c11c6866e7e2cccbf02bd);
+            
+        
+
+        marker_b9192b9365c91c8790cd8ad62f19a949.bindPopup(popup_d368370bb4d5acd9e99e2579fadff7a8)
+        ;
+
+        
+    
+    
+                marker_b9192b9365c91c8790cd8ad62f19a949.setIcon(icon_4832e649cb4a4efd9d65aab9153dae2f);
+            
+    
+            var marker_daf807dec3b9981431afa15ffbbacb9c = L.marker(
+                [55.3829765, 39.0356223],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c62d47d406133378613786b6434a75d7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fd4f90e133f72b41f6050be1ca17b5d1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9755efc04a44225e0c2050e62328f91c = $(`<div id="html_9755efc04a44225e0c2050e62328f91c" style="width: 100.0%; height: 100.0%;"><b>Егорьевск</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_fd4f90e133f72b41f6050be1ca17b5d1.setContent(html_9755efc04a44225e0c2050e62328f91c);
+            
+        
+
+        marker_daf807dec3b9981431afa15ffbbacb9c.bindPopup(popup_fd4f90e133f72b41f6050be1ca17b5d1)
+        ;
+
+        
+    
+    
+                marker_daf807dec3b9981431afa15ffbbacb9c.setIcon(icon_c62d47d406133378613786b6434a75d7);
+            
+    
+            var marker_914f9fc8e057836df45c91e703d31c3a = L.marker(
+                [52.6051488, 39.5963775],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_65c273bba41f9175a75981733cbe1926 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac9b84c442b72cddb3f8c8437ec64511 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_512c9c96894eae15ce7060e454b671f8 = $(`<div id="html_512c9c96894eae15ce7060e454b671f8" style="width: 100.0%; height: 100.0%;"><b>Липецк</b><br>Доход: 32,500 ₽</div>`)[0];
+                popup_ac9b84c442b72cddb3f8c8437ec64511.setContent(html_512c9c96894eae15ce7060e454b671f8);
+            
+        
+
+        marker_914f9fc8e057836df45c91e703d31c3a.bindPopup(popup_ac9b84c442b72cddb3f8c8437ec64511)
+        ;
+
+        
+    
+    
+                marker_914f9fc8e057836df45c91e703d31c3a.setIcon(icon_65c273bba41f9175a75981733cbe1926);
+            
+    
+            var marker_bc5629d76567d2c9f6c530825ebc53f3 = L.marker(
+                [55.7823547, 49.1242266],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_c99e8a535cec822de6a71c621185ad9b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e97ca99a2cf5d2781703a5913f771944 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d3f4012cc9cabc601abb8ca20337dcd4 = $(`<div id="html_d3f4012cc9cabc601abb8ca20337dcd4" style="width: 100.0%; height: 100.0%;"><b>Казань</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_e97ca99a2cf5d2781703a5913f771944.setContent(html_d3f4012cc9cabc601abb8ca20337dcd4);
+            
+        
+
+        marker_bc5629d76567d2c9f6c530825ebc53f3.bindPopup(popup_e97ca99a2cf5d2781703a5913f771944)
+        ;
+
+        
+    
+    
+                marker_bc5629d76567d2c9f6c530825ebc53f3.setIcon(icon_c99e8a535cec822de6a71c621185ad9b);
+            
+    
+            var marker_0937f516f35aedfe2585ff376f3b75ef = L.marker(
+                [54.6702523, 39.6884424],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_0d7a9f5935a0a46d6da32c9bbc57ec39 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96cdf5c50244a71411d355234aa08bf1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5479a9b69b123b4b5f9203c9952a04f6 = $(`<div id="html_5479a9b69b123b4b5f9203c9952a04f6" style="width: 100.0%; height: 100.0%;"><b>Рязань</b><br>Доход: 39,000 ₽</div>`)[0];
+                popup_96cdf5c50244a71411d355234aa08bf1.setContent(html_5479a9b69b123b4b5f9203c9952a04f6);
+            
+        
+
+        marker_0937f516f35aedfe2585ff376f3b75ef.bindPopup(popup_96cdf5c50244a71411d355234aa08bf1)
+        ;
+
+        
+    
+    
+                marker_0937f516f35aedfe2585ff376f3b75ef.setIcon(icon_0d7a9f5935a0a46d6da32c9bbc57ec39);
+            
+    
+            var marker_8c1be40e69cce739090d56f53385e4d6 = L.marker(
+                [61.0035254, 69.0189684],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_ffd3805a19268a82dade05a4554652b0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_04a5c4c0b5594e5c2a442da22a374286 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ecf0f61ed2b919071060168c9eecc60e = $(`<div id="html_ecf0f61ed2b919071060168c9eecc60e" style="width: 100.0%; height: 100.0%;"><b>Ханты-Мансийск</b><br>Доход: 45,500 ₽</div>`)[0];
+                popup_04a5c4c0b5594e5c2a442da22a374286.setContent(html_ecf0f61ed2b919071060168c9eecc60e);
+            
+        
+
+        marker_8c1be40e69cce739090d56f53385e4d6.bindPopup(popup_04a5c4c0b5594e5c2a442da22a374286)
+        ;
+
+        
+    
+    
+                marker_8c1be40e69cce739090d56f53385e4d6.setIcon(icon_ffd3805a19268a82dade05a4554652b0);
+            
+    
+            var marker_9da23848ce806114ff85fd1febdd5bd2 = L.marker(
+                [56.0104473, 37.4670831],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_dba94d973d1ccffb8ee4b380a4f597b1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "green",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6b20103bba5606850abbc3a14e60f752 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9d3b64a3692004c6c4040c2fa529e17a = $(`<div id="html_9d3b64a3692004c6c4040c2fa529e17a" style="width: 100.0%; height: 100.0%;"><b>Лобня</b><br>Доход: 7,800 ₽</div>`)[0];
+                popup_6b20103bba5606850abbc3a14e60f752.setContent(html_9d3b64a3692004c6c4040c2fa529e17a);
+            
+        
+
+        marker_9da23848ce806114ff85fd1febdd5bd2.bindPopup(popup_6b20103bba5606850abbc3a14e60f752)
+        ;
+
+        
+    
+    
+                marker_9da23848ce806114ff85fd1febdd5bd2.setIcon(icon_dba94d973d1ccffb8ee4b380a4f597b1);
+            
+    
+            var marker_1d6d9faee1add7e021698858c2b72656 = L.marker(
+                [55.8553511, 38.4411898],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_03dd4e09b7f5aba44ff137f6c546f0cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "orange",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_474a26aa3139ce06f1952afa1fc5cf6c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_82008e8d600faa024e77637cf7671ae5 = $(`<div id="html_82008e8d600faa024e77637cf7671ae5" style="width: 100.0%; height: 100.0%;"><b>Ногинск</b><br>Доход: 10,400 ₽</div>`)[0];
+                popup_474a26aa3139ce06f1952afa1fc5cf6c.setContent(html_82008e8d600faa024e77637cf7671ae5);
+            
+        
+
+        marker_1d6d9faee1add7e021698858c2b72656.bindPopup(popup_474a26aa3139ce06f1952afa1fc5cf6c)
+        ;
+
+        
+    
+    
+                marker_1d6d9faee1add7e021698858c2b72656.setIcon(icon_03dd4e09b7f5aba44ff137f6c546f0cb);
+            
+    
+            var marker_43c9878edd201fa99b542b26f5eced00 = L.marker(
+                [56.026581, 29.984261],
+                {
+}
+            ).addTo(marker_cluster_909ed06960aa2f1df622abae0c877117);
+        
+    
+            var icon_694242e79d1711455e67f0ae8dfead0e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_69786287f60a7b116a95cc1e5d2a17da = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_80dc2f82fbb663976ab51508df7123f8 = $(`<div id="html_80dc2f82fbb663976ab51508df7123f8" style="width: 100.0%; height: 100.0%;"><b>Колпино</b><br>Доход: 26,000 ₽</div>`)[0];
+                popup_69786287f60a7b116a95cc1e5d2a17da.setContent(html_80dc2f82fbb663976ab51508df7123f8);
+            
+        
+
+        marker_43c9878edd201fa99b542b26f5eced00.bindPopup(popup_69786287f60a7b116a95cc1e5d2a17da)
+        ;
+
+        
+    
+    
+                marker_43c9878edd201fa99b542b26f5eced00.setIcon(icon_694242e79d1711455e67f0ae8dfead0e);
+            
+    
+            marker_cluster_909ed06960aa2f1df622abae0c877117.addTo(map_86732fc267af5a4fa35848fbdb3cdafd);
+        
+    
+            var layer_control_486a1f5e9d4098a626e2d1e1a6ac2c71_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_31979be6f57cce66a3ca6fc8e2cba7ad,
+                },
+                overlays :  {
+                    "macro_element_909ed06960aa2f1df622abae0c877117" : marker_cluster_909ed06960aa2f1df622abae0c877117,
+                },
+            };
+            let layer_control_486a1f5e9d4098a626e2d1e1a6ac2c71 = L.control.layers(
+                layer_control_486a1f5e9d4098a626e2d1e1a6ac2c71_layers.base_layers,
+                layer_control_486a1f5e9d4098a626e2d1e1a6ac2c71_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_86732fc267af5a4fa35848fbdb3cdafd);
+
+        
+</script>
+</html>
